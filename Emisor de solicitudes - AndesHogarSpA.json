@@ -1,0 +1,175 @@
+{
+  "name": "Emisor de solicitudes - AndesHogarSpA",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "e6a0658e-8ae2-4f33-97d6-fb0448313751",
+      "name": "Ejecutar manualmente",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -32,
+        -64
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"solicitudes\": [\n    {\n      \"id_solicitud\": \"DEV-1115\",\n      \"sku\": \"AU-210\",\n      \"unidades\": \"1\",\n      \"monto\": \"19990\",\n      \"dias_desde_compra\": \"3\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"cliente1@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1116\",\n      \"sku\": \"TE-330\",\n      \"unidades\": \"2\",\n      \"monto\": \"69980\",\n      \"dias_desde_compra\": \"5\",\n      \"estado_producto\": \"abierto_sin_uso\",\n      \"email_cliente\": \"cliente2@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1117\",\n      \"sku\": \"HV-050\",\n      \"unidades\": \"1\",\n      \"monto\": \"24990\",\n      \"dias_desde_compra\": \"12\",\n      \"estado_producto\": \"con_fallas\",\n      \"email_cliente\": \"cliente3@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1118\",\n      \"sku\": \"MW-150\",\n      \"unidades\": \"1\",\n      \"monto\": \"79990\",\n      \"dias_desde_compra\": \"4\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"cliente4@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1119\",\n      \"sku\": \"PL-120\",\n      \"unidades\": \"1\",\n      \"monto\": \"45990\",\n      \"dias_desde_compra\": \"25\",\n      \"estado_producto\": \"danado_por_uso\",\n      \"email_cliente\": \"cliente5@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1120\",\n      \"sku\": \"AS-260\",\n      \"unidades\": \"1\",\n      \"monto\": \"89990\",\n      \"dias_desde_compra\": \"2\",\n      \"estado_producto\": \"con_fallas\",\n      \"email_cliente\": \"cliente6@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1121\",\n      \"sku\": \"LV-330\",\n      \"unidades\": \"1\",\n      \"monto\": \"289990\",\n      \"dias_desde_compra\": \"9\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"cliente7@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1122\",\n      \"sku\": \"PL-120\",\n      \"unidades\": \"1\",\n      \"monto\": \"45990\",\n      \"dias_desde_compra\": \"2\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"cliente8@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1123\",\n      \"sku\": \"AU-210\",\n      \"unidades\": \"2\",\n      \"monto\": \"39980\",\n      \"dias_desde_compra\": \"15\",\n      \"estado_producto\": \"danado_por_uso\",\n      \"email_cliente\": \"cliente9@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1124\",\n      \"sku\": \"HV-050\",\n      \"unidades\": \"2\",\n      \"monto\": \"49980\",\n      \"dias_desde_compra\": \"1\",\n      \"estado_producto\": \"abierto_sin_uso\",\n      \"email_cliente\": \"cliente10@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1125\",\n      \"sku\": \"TE-330\",\n      \"unidades\": \"1\",\n      \"monto\": \"34990\",\n      \"dias_desde_compra\": \"22\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"cliente11@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-1126\",\n      \"sku\": \"MW-150\",\n      \"unidades\": \"1\",\n      \"monto\": \"79990\",\n      \"dias_desde_compra\": \"8\",\n      \"estado_producto\": \"con_fallas\",\n      \"email_cliente\": \"cliente12@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-C01\",\n      \"sku\": \"CB-010\",\n      \"unidades\": \"1\",\n      \"monto\": \"9990\",\n      \"dias_desde_compra\": \"1\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"control01@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-C02\",\n      \"sku\": \"LV-330\",\n      \"unidades\": \"1\",\n      \"monto\": \"289990\",\n      \"dias_desde_compra\": \"2\",\n      \"estado_producto\": \"sin_abrir\",\n      \"email_cliente\": \"control02@example.cl\"\n    },\n    {\n      \"id_solicitud\": \"DEV-C03\",\n      \"sku\": \"MW-150\",\n      \"unidades\": \"1\",\n      \"monto\": \"79990\",\n      \"dias_desde_compra\": \"29\",\n      \"estado_producto\": \"abierto_sin_uso\",\n      \"email_cliente\": \"control03@example.cl\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "id": "aefc8e97-2b5d-410d-b273-c469c8ef9f63",
+      "name": "15 solicitudes (texto)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        192,
+        -64
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "solicitudes",
+        "options": {}
+      },
+      "id": "217a9e9a-2d4b-42ea-9357-f456a08ea3e3",
+      "name": "Separar solicitudes",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        416,
+        -64
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://valentina10.app.n8n.cloud/webhook/triage-devoluciones",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "a3ae6d76-7f7c-49df-873c-4d27bbc4ccd7",
+      "name": "POST al webhook de triage",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        640,
+        -64
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "561f95a8-5872-4329-ab73-b2752a9d90f7",
+              "name": "id_solicitud",
+              "value": "={{ $json.id_solicitud }}",
+              "type": "string"
+            },
+            {
+              "id": "2f8897d2-55a0-4a2e-9a66-5dc520a6c890",
+              "name": "monto",
+              "value": "={{ $json.monto }}",
+              "type": "number"
+            },
+            {
+              "id": "bdc17e66-a061-48c8-b7ec-915c9ab3d559",
+              "name": "dias_desde_compra",
+              "value": "={{ $json.dias_desde_compra }}",
+              "type": "number"
+            },
+            {
+              "id": "f1b03bbe-4cd5-4746-88c1-4f0dcdcf1181",
+              "name": "estado_producto",
+              "value": "={{ $json.estado_producto }}",
+              "type": "string"
+            },
+            {
+              "id": "63c56ea6-a0a4-4209-9a0b-13bb6215f218",
+              "name": "ruta",
+              "value": "={{ $json.ruta }}",
+              "type": "string"
+            },
+            {
+              "id": "077c26ce-bf27-4d8f-9616-a959d1aa04b6",
+              "name": "motivo",
+              "value": "={{ $json.motivo }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "698f18eb-c59c-4260-a1a5-2a6c8456c774",
+      "name": "Tabla de resultados",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        848,
+        -64
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Ejecutar manualmente": {
+      "main": [
+        [
+          {
+            "node": "15 solicitudes (texto)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "15 solicitudes (texto)": {
+      "main": [
+        [
+          {
+            "node": "Separar solicitudes",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Separar solicitudes": {
+      "main": [
+        [
+          {
+            "node": "POST al webhook de triage",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "POST al webhook de triage": {
+      "main": [
+        [
+          {
+            "node": "Tabla de resultados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "c62dd54c-31a2-4c63-a4e0-03ba6884d39e",
+  "meta": {
+    "instanceId": "13115a6945b4d8302924412e2202009da203fe0ab11bbd2aa4ef747dd7c9a1aa"
+  },
+  "nodeGroups": [],
+  "id": "RSpNHCaVg0XjgsgM",
+  "tags": []
+}
